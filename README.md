@@ -28,3 +28,5 @@ To relocate the window, select "Move Position..."
 A window bar will apear at the top of the overlay. Drag and drop the the overlay to the desired position. Click the Cross to lock-in the position.
 
 ![](Pictures/titlebar.PNG)
+
+The overlay is interactive. Click a reading to view the contents. Scroll over the text and reading selections to see more.
