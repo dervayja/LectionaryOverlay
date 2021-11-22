@@ -9,11 +9,11 @@ The program is completely offline and follows the "new calendar" Orthodox liturg
 ## Installation
 1. Download the installation zip file in the Releases section of this repository.
 2. Extract the zipped folder to any location.
-3. Run Setup.exe. Choose "Run Anyway" if promped. The program will automatically install itself to the user's %AppData% location.
+3. Run Setup.exe. Choose "Run Anyway" if promped. The program will install itself to the user's %AppData% location and automatically launch.
 4. The downloaded/ extracted files can be deleted.
 
 ## Usage
-The program is controlled by right-clicking the icon docked in the system tray.
+The overlay is controlled by right-clicking the icon docked in the system tray.
 
 ![](Pictures/menu.PNG)
 
