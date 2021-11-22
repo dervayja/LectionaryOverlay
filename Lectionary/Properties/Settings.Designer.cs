@@ -49,7 +49,7 @@ namespace Lectionary.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Arial, 12pt")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Segoe UI, 12pt")]
         public global::System.Drawing.Font TextFont {
             get {
                 return ((global::System.Drawing.Font)(this["TextFont"]));

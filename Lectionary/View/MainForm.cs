@@ -39,6 +39,7 @@ namespace Lectionary.View
             this.BackColor = Properties.Settings.Default.BackgroundColor;
             this.LABEL_DATE.Text = Date;
             LABEL_FEASTS_AND_SAINTS.Text = FeastsAndSaints;
+            LABEL_FEASTS_AND_SAINTS.Cursor = (LABEL_FEASTS_AND_SAINTS.Height > 60) ? Cursors.SizeNS : Cursors.Default;
             UpdateFonts();
             UpdateReadingTitles();
             InitializeNewReadings();
@@ -51,8 +52,8 @@ namespace Lectionary.View
 
         private void UpdateFonts()
         {
-            Font regularFont = new Font(Properties.Settings.Default.TextFont.FontFamily, 10, FontStyle.Regular);
-            Font boldFont = new Font(Properties.Settings.Default.TextFont.FontFamily, 10, FontStyle.Bold);
+            Font regularFont = new Font("Segoe UI", 10, FontStyle.Regular);
+            Font boldFont = new Font("Segoe UI", 10, FontStyle.Bold);
             LABEL_DATE.Font = regularFont;
             LABEL_FEASTS_AND_SAINTS.Font = regularFont;
             LABEL_READING.Font = regularFont;
@@ -64,29 +65,27 @@ namespace Lectionary.View
 
         public void UpdateReadingTitles()
         {
-            MENUSTRIP_READINGS.Invoke((MethodInvoker)delegate {
-                MENUSTRIP_READINGS.Items.Clear(); 
-                foreach (string title in ReadingTitles)
-                {
-                    ToolStripMenuItem item = new ToolStripMenuItem();
-                    item.Text = title;
-                    Font menuFont = new Font(Properties.Settings.Default.TextFont.FontFamily, 10, FontStyle.Regular);
-                    item.Font = menuFont;
-                    MENUSTRIP_READINGS.Items.Add(item);
-                }
-            });
+            MENUSTRIP_READINGS.Items.Clear();
+            foreach (string title in ReadingTitles)
+            {
+                ToolStripMenuItem item = new ToolStripMenuItem();
+                item.Text = title;
+                Font menuFont = new Font(Properties.Settings.Default.TextFont.FontFamily, 10, FontStyle.Regular);
+                item.Font = menuFont;
+                MENUSTRIP_READINGS.Items.Add(item);
+                MENUSTRIP_READINGS.Cursor = (MENUSTRIP_READINGS.Height > 60) ? Cursors.SizeNS : Cursors.Default;
+                PANEL_MENU_FRONT.Cursor = (PANEL_MENU_FRONT.Height > 60) ? Cursors.SizeNS : Cursors.Default;
+            }
 
             InitializeNewReadings();
         }
 
         public void InitializeNewReadings()
         {
-            MENUSTRIP_READINGS.Invoke((MethodInvoker)delegate
-            {
-                Font boldFont = new Font(MENUSTRIP_READINGS.Items[0].Font, FontStyle.Bold);
-                MENUSTRIP_READINGS.Items[0].Font = boldFont;
-                LABEL_READING.Text = Readings[0];
-            });
+            Font boldFont = new Font(MENUSTRIP_READINGS.Items[0].Font, FontStyle.Bold);
+            MENUSTRIP_READINGS.Items[0].Font = boldFont;
+            LABEL_READING.Text = Readings[0];
+            LABEL_READING.Cursor = (LABEL_READING.Height > 220) ? Cursors.SizeNS : Cursors.Default;
         }
 
         public void UpdateSize(string size)
@@ -118,6 +117,12 @@ namespace Lectionary.View
             int index = item.Owner.Items.IndexOf(item);
             LABEL_READING.Text = Readings[index];
             PANEL_READING_FRONT.VerticalScroll.Value = 0;
+            LABEL_READING.Cursor = (LABEL_READING.Height > 220) ? Cursors.SizeNS : Cursors.Default;
+        }
+
+        private void LABEL_READING_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

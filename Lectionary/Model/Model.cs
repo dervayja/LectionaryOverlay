@@ -22,11 +22,13 @@ namespace Lectionary.Model
 
         private void MainTimer_Ticked(object sender, EventArgs e)
         {
+            
             // Update data and raise event if new day
             if (Today.Day.Date != DateTime.Now.Date)
             {
                 UpdateModel();
             }
+            
         }
 
         public void UpdateModel()

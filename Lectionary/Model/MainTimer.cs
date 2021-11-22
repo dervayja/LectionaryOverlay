@@ -7,7 +7,7 @@ namespace Lectionary.Model
     public class MainTimer : IMainTimer
     {
         public event EventHandler OnTimerTick;
-        private System.Timers.Timer mainTimer = new System.Timers.Timer(2000);
+        private System.Timers.Timer mainTimer = new System.Timers.Timer(60000);
 
         public MainTimer()
         {
