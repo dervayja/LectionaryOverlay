@@ -38,7 +38,10 @@ namespace Lectionary.Model
             {
                 if (bible.books.Where(Book => Book.name == reading.Book).Any())
                 {
-                    filteredLectionaryDate.Readings.Add(reading);
+                    if (reading.EndChapter != 0 && reading.EndVerse != 0)
+                    {
+                        filteredLectionaryDate.Readings.Add(reading);
+                    }
                 }
             }
             return filteredLectionaryDate;

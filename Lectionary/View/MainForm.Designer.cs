@@ -78,7 +78,7 @@ namespace Lectionary.View
             this.TABLELAYOUTPANEL_MAIN.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 110F));
             this.TABLELAYOUTPANEL_MAIN.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.TABLELAYOUTPANEL_MAIN.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.TABLELAYOUTPANEL_MAIN.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.TABLELAYOUTPANEL_MAIN.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 66F));
             this.TABLELAYOUTPANEL_MAIN.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.TABLELAYOUTPANEL_MAIN.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 42F));
             this.TABLELAYOUTPANEL_MAIN.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 220F));
@@ -119,7 +119,7 @@ namespace Lectionary.View
             this.LABEL_TITLE_READING.AutoSize = true;
             this.LABEL_TITLE_READING.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LABEL_TITLE_READING.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.LABEL_TITLE_READING.Location = new System.Drawing.Point(3, 220);
+            this.LABEL_TITLE_READING.Location = new System.Drawing.Point(3, 226);
             this.LABEL_TITLE_READING.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.LABEL_TITLE_READING.Name = "LABEL_TITLE_READING";
             this.LABEL_TITLE_READING.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
@@ -132,7 +132,7 @@ namespace Lectionary.View
             // 
             this.PANEL_READING_BACK.Controls.Add(this.PANEL_READING_FRONT);
             this.PANEL_READING_BACK.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PANEL_READING_BACK.Location = new System.Drawing.Point(3, 285);
+            this.PANEL_READING_BACK.Location = new System.Drawing.Point(3, 291);
             this.PANEL_READING_BACK.Name = "PANEL_READING_BACK";
             this.PANEL_READING_BACK.Size = new System.Drawing.Size(436, 214);
             this.PANEL_READING_BACK.TabIndex = 7;
@@ -166,7 +166,7 @@ namespace Lectionary.View
             // 
             this.PANEL_MENU_BACK.Controls.Add(this.PANEL_MENU_FRONT);
             this.PANEL_MENU_BACK.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PANEL_MENU_BACK.Location = new System.Drawing.Point(0, 240);
+            this.PANEL_MENU_BACK.Location = new System.Drawing.Point(0, 246);
             this.PANEL_MENU_BACK.Margin = new System.Windows.Forms.Padding(0);
             this.PANEL_MENU_BACK.Name = "PANEL_MENU_BACK";
             this.PANEL_MENU_BACK.Size = new System.Drawing.Size(442, 42);
@@ -254,7 +254,7 @@ namespace Lectionary.View
             this.PANEL_FEASTSANDSAINTS_BACK.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PANEL_FEASTSANDSAINTS_BACK.Location = new System.Drawing.Point(3, 163);
             this.PANEL_FEASTSANDSAINTS_BACK.Name = "PANEL_FEASTSANDSAINTS_BACK";
-            this.PANEL_FEASTSANDSAINTS_BACK.Size = new System.Drawing.Size(436, 54);
+            this.PANEL_FEASTSANDSAINTS_BACK.Size = new System.Drawing.Size(436, 60);
             this.PANEL_FEASTSANDSAINTS_BACK.TabIndex = 9;
             // 
             // PANEL_FEASTSANDSAINTS_FRONT
@@ -264,7 +264,7 @@ namespace Lectionary.View
             this.PANEL_FEASTSANDSAINTS_FRONT.Dock = System.Windows.Forms.DockStyle.Left;
             this.PANEL_FEASTSANDSAINTS_FRONT.Location = new System.Drawing.Point(0, 0);
             this.PANEL_FEASTSANDSAINTS_FRONT.Name = "PANEL_FEASTSANDSAINTS_FRONT";
-            this.PANEL_FEASTSANDSAINTS_FRONT.Size = new System.Drawing.Size(532, 54);
+            this.PANEL_FEASTSANDSAINTS_FRONT.Size = new System.Drawing.Size(532, 60);
             this.PANEL_FEASTSANDSAINTS_FRONT.TabIndex = 0;
             // 
             // LABEL_FEASTS_AND_SAINTS

@@ -32,7 +32,6 @@ namespace Lectionary.View
         public List<string> ReadingTitles { get; set; } = new List<string>();
         public List<string> Readings { get; set; } = new List<string>();
 
-        public event EventHandler OnPositionChanged;
 
         public void PaintAll(object sender, EventArgs e)
         {
@@ -73,9 +72,9 @@ namespace Lectionary.View
                 Font menuFont = new Font(Properties.Settings.Default.TextFont.FontFamily, 10, FontStyle.Regular);
                 item.Font = menuFont;
                 MENUSTRIP_READINGS.Items.Add(item);
-                MENUSTRIP_READINGS.Cursor = (MENUSTRIP_READINGS.Height > 60) ? Cursors.SizeNS : Cursors.Default;
-                PANEL_MENU_FRONT.Cursor = (PANEL_MENU_FRONT.Height > 60) ? Cursors.SizeNS : Cursors.Default;
             }
+            MENUSTRIP_READINGS.Cursor = Cursors.Default;
+            PANEL_MENU_FRONT.Cursor = (PANEL_MENU_FRONT.Height > 50) ? Cursors.SizeNS : Cursors.Default;
 
             InitializeNewReadings();
         }

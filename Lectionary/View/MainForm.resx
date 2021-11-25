@@ -63,6 +63,9 @@
   <metadata name="MENUSTRIP_READINGS.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <metadata name="MENUSTRIP_READINGS.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <data name="LABEL_FEASTS_AND_SAINTS.Text" xml:space="preserve">
     <value>Forefeast of the Entry Into the Temple of the Most-holy Theotokos. Ven. Gregory Decapolites (816). St. Proclus, Archbishop of Constantinople (446-447). Ven. Diodorus, Abbot of Yuregórsk (1633). Martyr Dasius of Dorostorum (3rd c.). Martyrs Eustace, Thespesius, and Anatolius of Nicea (312).</value>
   </data>

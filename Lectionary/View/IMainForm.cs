@@ -7,7 +7,6 @@ namespace Lectionary.View
 {
     interface IMainForm
     {
-        public event EventHandler OnPositionChanged;
         public void PaintAll(object sender, EventArgs e);
 
         public int PositionX { get; }

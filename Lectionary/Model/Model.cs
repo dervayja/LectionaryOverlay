@@ -33,9 +33,19 @@ namespace Lectionary.Model
 
         public void UpdateModel()
         {
-            LectionaryDate todaysLectionary = repo.Lectionary.Find(x => x.Day.Date == DateTime.Now.Date);
-            Today = new DailyData(todaysLectionary, repo.Bible);
+            try
+            {
+                LectionaryDate todaysLectionary = repo.Lectionary.Find(x => x.Day.Date == DateTime.Now.Date);
+                Today = new DailyData(todaysLectionary, repo.Bible);
+            }
+            catch
+            {
+                DateTime safeDay = new DateTime(2021, 11, 21);
+                LectionaryDate todaysLectionary = repo.Lectionary.Find(x => x.Day.Date == safeDay);
+            }
+
             OnDataChanged?.Invoke(this, EventArgs.Empty);
+
         }
 
 
