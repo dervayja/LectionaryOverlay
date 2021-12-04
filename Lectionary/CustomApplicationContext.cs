@@ -25,8 +25,9 @@ namespace Lectionary
 
             theIcon.OnSettingsChange += TheIcon_OnSettingsChange;
             theModel.OnDataChanged += TheModel_OnDataChanged;
-            theModel.OnDataChanged += theForm.PaintAll;
-            theIcon.OnSettingsChange += theForm.PaintAll;
+            //theModel.OnDataChanged += theForm.PaintAll;
+            //theIcon.OnSettingsChange += theForm.PaintAll;
+            PaintForm += theForm.PaintAll;
             theIcon.OnMoveWindow += theForm.EnableWindowMovement;
 
             theModel.UpdateModel(DateTime.Now);
@@ -45,7 +46,6 @@ namespace Lectionary
         private void TheIcon_OnSettingsChange(object sender, EventArgs e)
         {
             PaintForm?.Invoke(this, EventArgs.Empty);
-            //theForm.PaintAll();
         }
 
         private void LoadReadings()

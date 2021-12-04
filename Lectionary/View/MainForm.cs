@@ -23,6 +23,9 @@ namespace Lectionary.View
             this.StartPosition = FormStartPosition.Manual;
             this.Location = startPoint;
             this.Icon = Resources.AppIcon;
+            LABEL_TITLE_FEASTSANDSAINTS.Font = boldFont;
+            LABEL_TITLE_READING.Font = boldFont;
+
         }
 
         public int PositionX { get; }
@@ -32,34 +35,30 @@ namespace Lectionary.View
         public List<string> ReadingTitles { get; set; } = new List<string>();
         public List<string> Readings { get; set; } = new List<string>();
 
+        private Font regularFont = new Font("Segoe UI", 10, FontStyle.Regular);
+        private Font boldFont = new Font("Segoe UI", 10, FontStyle.Bold);
+
 
         public void PaintAll(object sender, EventArgs e)
         {
-            this.BackColor = Properties.Settings.Default.BackgroundColor;
-            this.LABEL_DATE.Text = Date;
-            LABEL_FEASTS_AND_SAINTS.Text = FeastsAndSaints;
-            LABEL_FEASTS_AND_SAINTS.Cursor = (LABEL_FEASTS_AND_SAINTS.Height > 60) ? Cursors.SizeNS : Cursors.Default;
-            UpdateFonts();
-            UpdateReadingTitles();
-            InitializeNewReadings();
+            BackColor = Properties.Settings.Default.BackgroundColor;
+            LABEL_DATE.Invoke((MethodInvoker)delegate
+            { 
+                LABEL_DATE.Text = Date;
+                LABEL_DATE.Font = regularFont;
+            });
+            LABEL_FEASTS_AND_SAINTS.Invoke((MethodInvoker)delegate
+            { 
+                LABEL_FEASTS_AND_SAINTS.Text = FeastsAndSaints;
+                LABEL_FEASTS_AND_SAINTS.Cursor = (LABEL_FEASTS_AND_SAINTS.Height > 60) ? Cursors.SizeNS : Cursors.Default;
+                LABEL_FEASTS_AND_SAINTS.Font = regularFont;
+            });
+            MENUSTRIP_READINGS.Invoke((MethodInvoker)delegate { UpdateReadingTitles(); });
         }
 
         public void EnableWindowMovement(object sender, EventArgs e)
         {
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
-        }
-
-        private void UpdateFonts()
-        {
-            Font regularFont = new Font("Segoe UI", 10, FontStyle.Regular);
-            Font boldFont = new Font("Segoe UI", 10, FontStyle.Bold);
-            LABEL_DATE.Font = regularFont;
-            LABEL_FEASTS_AND_SAINTS.Font = regularFont;
-            LABEL_READING.Font = regularFont;
-            LABEL_TITLE_FEASTSANDSAINTS.Font = boldFont;
-            LABEL_TITLE_READING.Font = boldFont;
-            UpdateReadingTitles();
-            InitializeNewReadings();
         }
 
         public void UpdateReadingTitles()
@@ -75,8 +74,9 @@ namespace Lectionary.View
                 MENUSTRIP_READINGS.Items.Add(item);
             }
 
-            Cursor menuCursor = (MENUSTRIP_READINGS.Height > 50) ? Cursors.SizeNS : Cursors.Default;
+            Cursor menuCursor = (MENUSTRIP_READINGS.Height > 60) ? Cursors.SizeNS : Cursors.Default;
             MENUSTRIP_READINGS.Cursor = menuCursor;
+            PANEL_MENU_FRONT.Cursor = menuCursor;
             foreach (ToolStripMenuItem item in MENUSTRIP_READINGS.Items)
             {
                 item.MouseEnter += (obj, arg) => MENUSTRIP_READINGS.Cursor = Cursors.Default;
@@ -91,8 +91,12 @@ namespace Lectionary.View
         {
             Font boldFont = new Font(MENUSTRIP_READINGS.Items[0].Font, FontStyle.Bold);
             MENUSTRIP_READINGS.Items[0].Font = boldFont;
-            LABEL_READING.Text = Readings[0];
-            LABEL_READING.Cursor = (LABEL_READING.Height > 220) ? Cursors.SizeNS : Cursors.Default;
+            LABEL_READING.Invoke((MethodInvoker)delegate
+            {
+                LABEL_READING.Text = Readings[0];
+                LABEL_READING.Cursor = (LABEL_READING.Height > 220) ? Cursors.SizeNS : Cursors.Default;
+                LABEL_READING.Font = regularFont;
+            });
         }
 
         public void UpdateSize(string size)

@@ -29,11 +29,12 @@ namespace Lectionary.Model
                 UpdateModel(DateTime.Now);
             }
             
+            
         }
 
         public void UpdateModel(DateTime day)
         {
-            //DateTime testDay = new DateTime(2021, 11, 21);
+
             try
             {
                 LectionaryDate todaysLectionary = repo.Lectionary.Find(x => x.Day.Date == day.Date);
@@ -43,6 +44,7 @@ namespace Lectionary.Model
             {
                 DateTime safeDay = new DateTime(2021, 11, 21);
                 LectionaryDate todaysLectionary = repo.Lectionary.Find(x => x.Day.Date == safeDay);
+                Today = new DailyData(todaysLectionary, repo.Bible);
             }
 
             OnDataChanged?.Invoke(this, EventArgs.Empty);
