@@ -6,7 +6,7 @@ namespace Lectionary.Model
 {
     public interface IRepository
     {
-        public List<LectionaryDate> Lectionary { get; set; }
-        public Bible Bible { get; set; }
+        List<LectionaryDate> Lectionary { get; set; }
+        Bible Bible { get; set; }
     }
 }

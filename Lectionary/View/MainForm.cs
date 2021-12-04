@@ -71,10 +71,18 @@ namespace Lectionary.View
                 item.Text = title;
                 Font menuFont = new Font(Properties.Settings.Default.TextFont.FontFamily, 10, FontStyle.Regular);
                 item.Font = menuFont;
+                
                 MENUSTRIP_READINGS.Items.Add(item);
             }
-            MENUSTRIP_READINGS.Cursor = Cursors.Default;
-            PANEL_MENU_FRONT.Cursor = (PANEL_MENU_FRONT.Height > 50) ? Cursors.SizeNS : Cursors.Default;
+
+            Cursor menuCursor = (MENUSTRIP_READINGS.Height > 50) ? Cursors.SizeNS : Cursors.Default;
+            MENUSTRIP_READINGS.Cursor = menuCursor;
+            foreach (ToolStripMenuItem item in MENUSTRIP_READINGS.Items)
+            {
+                item.MouseEnter += (obj, arg) => MENUSTRIP_READINGS.Cursor = Cursors.Default;
+                item.MouseLeave += (obj, arg) => MENUSTRIP_READINGS.Cursor = menuCursor;
+            }
+
 
             InitializeNewReadings();
         }

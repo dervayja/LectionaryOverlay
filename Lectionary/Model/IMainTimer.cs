@@ -6,6 +6,6 @@ namespace Lectionary.Model
 {
     public interface IMainTimer
     {
-        public event EventHandler OnTimerTick;
+        event EventHandler OnTimerTick;
     }
 }

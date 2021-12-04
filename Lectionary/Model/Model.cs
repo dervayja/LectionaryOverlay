@@ -17,7 +17,7 @@ namespace Lectionary.Model
             LectionaryDate todaysLectionary = repo.Lectionary.Find(x => x.Day.Date == DateTime.Now.Date);
             Today = new DailyData(todaysLectionary, repo.Bible);
             timer.OnTimerTick += MainTimer_Ticked;
-            UpdateModel();
+            UpdateModel(DateTime.Now);
         }
 
         private void MainTimer_Ticked(object sender, EventArgs e)
@@ -26,16 +26,17 @@ namespace Lectionary.Model
             // Update data and raise event if new day
             if (Today.Day.Date != DateTime.Now.Date)
             {
-                UpdateModel();
+                UpdateModel(DateTime.Now);
             }
             
         }
 
-        public void UpdateModel()
+        public void UpdateModel(DateTime day)
         {
+            //DateTime testDay = new DateTime(2021, 11, 21);
             try
             {
-                LectionaryDate todaysLectionary = repo.Lectionary.Find(x => x.Day.Date == DateTime.Now.Date);
+                LectionaryDate todaysLectionary = repo.Lectionary.Find(x => x.Day.Date == day.Date);
                 Today = new DailyData(todaysLectionary, repo.Bible);
             }
             catch

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using Lectionary.Model;
-using System.Text.Json;
+//using System.Text.Json;
 
 namespace Lectionary.Model
 {
@@ -18,8 +18,8 @@ namespace Lectionary.Model
 
         private void Initialize()
         {
-            Lectionary = JsonSerializer.Deserialize<List<LectionaryDate>>(Resources.lectionary);
-            Bible = JsonSerializer.Deserialize<Bible>(Resources.NKJV);
+            Lectionary = System.Text.Json.JsonSerializer.Deserialize<List<LectionaryDate>>(Resources.lectionary);
+            Bible = System.Text.Json.JsonSerializer.Deserialize<Bible>(Resources.NKJV);
         }
     }
 }

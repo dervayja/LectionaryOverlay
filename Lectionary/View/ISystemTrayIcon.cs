@@ -6,6 +6,6 @@ namespace Lectionary.View
 {
     interface ISystemTrayIcon
     {
-        public event EventHandler OnSettingsChange;
+        event EventHandler OnSettingsChange;
     }
 }

@@ -75,15 +75,15 @@ namespace Lectionary.View
             this.TABLELAYOUTPANEL_MAIN.Location = new System.Drawing.Point(0, 0);
             this.TABLELAYOUTPANEL_MAIN.Name = "TABLELAYOUTPANEL_MAIN";
             this.TABLELAYOUTPANEL_MAIN.RowCount = 8;
-            this.TABLELAYOUTPANEL_MAIN.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 110F));
-            this.TABLELAYOUTPANEL_MAIN.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.TABLELAYOUTPANEL_MAIN.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.TABLELAYOUTPANEL_MAIN.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 66F));
-            this.TABLELAYOUTPANEL_MAIN.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.TABLELAYOUTPANEL_MAIN.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 42F));
-            this.TABLELAYOUTPANEL_MAIN.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 220F));
+            this.TABLELAYOUTPANEL_MAIN.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 95F));
+            this.TABLELAYOUTPANEL_MAIN.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
+            this.TABLELAYOUTPANEL_MAIN.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
+            this.TABLELAYOUTPANEL_MAIN.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 64F));
+            this.TABLELAYOUTPANEL_MAIN.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
+            this.TABLELAYOUTPANEL_MAIN.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 46F));
+            this.TABLELAYOUTPANEL_MAIN.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 180F));
             this.TABLELAYOUTPANEL_MAIN.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.TABLELAYOUTPANEL_MAIN.Size = new System.Drawing.Size(442, 551);
+            this.TABLELAYOUTPANEL_MAIN.Size = new System.Drawing.Size(379, 478);
             this.TABLELAYOUTPANEL_MAIN.TabIndex = 0;
             this.TABLELAYOUTPANEL_MAIN.MouseClick += new System.Windows.Forms.MouseEventHandler(this.TABLELAYOUTPANEL_MAIN_MouseClick);
             // 
@@ -91,11 +91,11 @@ namespace Lectionary.View
             // 
             this.LABEL_DATE.AutoSize = true;
             this.LABEL_DATE.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LABEL_DATE.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LABEL_DATE.Location = new System.Drawing.Point(3, 110);
+            this.LABEL_DATE.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.LABEL_DATE.Location = new System.Drawing.Point(3, 95);
             this.LABEL_DATE.Name = "LABEL_DATE";
-            this.LABEL_DATE.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.LABEL_DATE.Size = new System.Drawing.Size(436, 30);
+            this.LABEL_DATE.Padding = new System.Windows.Forms.Padding(9, 0, 17, 0);
+            this.LABEL_DATE.Size = new System.Drawing.Size(373, 26);
             this.LABEL_DATE.TabIndex = 0;
             this.LABEL_DATE.Text = "Tuesday, November 16, 2021";
             this.LABEL_DATE.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -104,12 +104,12 @@ namespace Lectionary.View
             // 
             this.LABEL_TITLE_FEASTSANDSAINTS.AutoSize = true;
             this.LABEL_TITLE_FEASTSANDSAINTS.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LABEL_TITLE_FEASTSANDSAINTS.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.LABEL_TITLE_FEASTSANDSAINTS.Location = new System.Drawing.Point(3, 140);
+            this.LABEL_TITLE_FEASTSANDSAINTS.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.LABEL_TITLE_FEASTSANDSAINTS.Location = new System.Drawing.Point(3, 121);
             this.LABEL_TITLE_FEASTSANDSAINTS.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.LABEL_TITLE_FEASTSANDSAINTS.Name = "LABEL_TITLE_FEASTSANDSAINTS";
-            this.LABEL_TITLE_FEASTSANDSAINTS.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.LABEL_TITLE_FEASTSANDSAINTS.Size = new System.Drawing.Size(439, 20);
+            this.LABEL_TITLE_FEASTSANDSAINTS.Padding = new System.Windows.Forms.Padding(17, 0, 0, 0);
+            this.LABEL_TITLE_FEASTSANDSAINTS.Size = new System.Drawing.Size(376, 17);
             this.LABEL_TITLE_FEASTSANDSAINTS.TabIndex = 1;
             this.LABEL_TITLE_FEASTSANDSAINTS.Text = "Today\'s Commemorated Feasts and Saints";
             this.LABEL_TITLE_FEASTSANDSAINTS.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -118,12 +118,12 @@ namespace Lectionary.View
             // 
             this.LABEL_TITLE_READING.AutoSize = true;
             this.LABEL_TITLE_READING.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LABEL_TITLE_READING.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.LABEL_TITLE_READING.Location = new System.Drawing.Point(3, 226);
+            this.LABEL_TITLE_READING.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.LABEL_TITLE_READING.Location = new System.Drawing.Point(3, 202);
             this.LABEL_TITLE_READING.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.LABEL_TITLE_READING.Name = "LABEL_TITLE_READING";
-            this.LABEL_TITLE_READING.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.LABEL_TITLE_READING.Size = new System.Drawing.Size(439, 20);
+            this.LABEL_TITLE_READING.Padding = new System.Windows.Forms.Padding(17, 0, 0, 0);
+            this.LABEL_TITLE_READING.Size = new System.Drawing.Size(376, 17);
             this.LABEL_TITLE_READING.TabIndex = 2;
             this.LABEL_TITLE_READING.Text = "Daily Lectionary Readings";
             this.LABEL_TITLE_READING.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -132,9 +132,9 @@ namespace Lectionary.View
             // 
             this.PANEL_READING_BACK.Controls.Add(this.PANEL_READING_FRONT);
             this.PANEL_READING_BACK.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PANEL_READING_BACK.Location = new System.Drawing.Point(3, 291);
+            this.PANEL_READING_BACK.Location = new System.Drawing.Point(3, 268);
             this.PANEL_READING_BACK.Name = "PANEL_READING_BACK";
-            this.PANEL_READING_BACK.Size = new System.Drawing.Size(436, 214);
+            this.PANEL_READING_BACK.Size = new System.Drawing.Size(373, 174);
             this.PANEL_READING_BACK.TabIndex = 7;
             // 
             // PANEL_READING_FRONT
@@ -144,7 +144,7 @@ namespace Lectionary.View
             this.PANEL_READING_FRONT.Dock = System.Windows.Forms.DockStyle.Left;
             this.PANEL_READING_FRONT.Location = new System.Drawing.Point(0, 0);
             this.PANEL_READING_FRONT.Name = "PANEL_READING_FRONT";
-            this.PANEL_READING_FRONT.Size = new System.Drawing.Size(532, 214);
+            this.PANEL_READING_FRONT.Size = new System.Drawing.Size(456, 174);
             this.PANEL_READING_FRONT.TabIndex = 0;
             // 
             // LABEL_READING
@@ -152,13 +152,13 @@ namespace Lectionary.View
             this.LABEL_READING.AutoSize = true;
             this.LABEL_READING.Cursor = System.Windows.Forms.Cursors.SizeNS;
             this.LABEL_READING.Dock = System.Windows.Forms.DockStyle.Top;
-            this.LABEL_READING.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LABEL_READING.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.LABEL_READING.Location = new System.Drawing.Point(0, 0);
             this.LABEL_READING.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.LABEL_READING.MaximumSize = new System.Drawing.Size(430, 0);
+            this.LABEL_READING.MaximumSize = new System.Drawing.Size(369, 0);
             this.LABEL_READING.Name = "LABEL_READING";
-            this.LABEL_READING.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
-            this.LABEL_READING.Size = new System.Drawing.Size(430, 513);
+            this.LABEL_READING.Padding = new System.Windows.Forms.Padding(17, 0, 17, 0);
+            this.LABEL_READING.Size = new System.Drawing.Size(369, 608);
             this.LABEL_READING.TabIndex = 0;
             this.LABEL_READING.Text = resources.GetString("LABEL_READING.Text");
             // 
@@ -166,10 +166,10 @@ namespace Lectionary.View
             // 
             this.PANEL_MENU_BACK.Controls.Add(this.PANEL_MENU_FRONT);
             this.PANEL_MENU_BACK.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PANEL_MENU_BACK.Location = new System.Drawing.Point(0, 246);
+            this.PANEL_MENU_BACK.Location = new System.Drawing.Point(0, 219);
             this.PANEL_MENU_BACK.Margin = new System.Windows.Forms.Padding(0);
             this.PANEL_MENU_BACK.Name = "PANEL_MENU_BACK";
-            this.PANEL_MENU_BACK.Size = new System.Drawing.Size(442, 42);
+            this.PANEL_MENU_BACK.Size = new System.Drawing.Size(379, 46);
             this.PANEL_MENU_BACK.TabIndex = 8;
             // 
             // PANEL_MENU_FRONT
@@ -180,12 +180,12 @@ namespace Lectionary.View
             this.PANEL_MENU_FRONT.Dock = System.Windows.Forms.DockStyle.Left;
             this.PANEL_MENU_FRONT.Location = new System.Drawing.Point(0, 0);
             this.PANEL_MENU_FRONT.Name = "PANEL_MENU_FRONT";
-            this.PANEL_MENU_FRONT.Size = new System.Drawing.Size(532, 42);
+            this.PANEL_MENU_FRONT.Size = new System.Drawing.Size(456, 46);
             this.PANEL_MENU_FRONT.TabIndex = 0;
             // 
             // MENUSTRIP_READINGS
             // 
-            this.MENUSTRIP_READINGS.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MENUSTRIP_READINGS.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.MENUSTRIP_READINGS.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.MENUSTRIP_READINGS.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem1,
@@ -198,10 +198,10 @@ namespace Lectionary.View
             this.MENUSTRIP_READINGS.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow;
             this.MENUSTRIP_READINGS.Location = new System.Drawing.Point(0, 0);
             this.MENUSTRIP_READINGS.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.MENUSTRIP_READINGS.MaximumSize = new System.Drawing.Size(430, 0);
+            this.MENUSTRIP_READINGS.MaximumSize = new System.Drawing.Size(369, 0);
             this.MENUSTRIP_READINGS.Name = "MENUSTRIP_READINGS";
-            this.MENUSTRIP_READINGS.Padding = new System.Windows.Forms.Padding(20, 2, 20, 2);
-            this.MENUSTRIP_READINGS.Size = new System.Drawing.Size(430, 73);
+            this.MENUSTRIP_READINGS.Padding = new System.Windows.Forms.Padding(17, 0, 17, 0);
+            this.MENUSTRIP_READINGS.Size = new System.Drawing.Size(369, 69);
             this.MENUSTRIP_READINGS.TabIndex = 6;
             this.MENUSTRIP_READINGS.Text = "menuStrip1";
             this.MENUSTRIP_READINGS.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.MENUSTRIP_READINGS_ItemClicked);
@@ -252,9 +252,9 @@ namespace Lectionary.View
             // 
             this.PANEL_FEASTSANDSAINTS_BACK.Controls.Add(this.PANEL_FEASTSANDSAINTS_FRONT);
             this.PANEL_FEASTSANDSAINTS_BACK.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PANEL_FEASTSANDSAINTS_BACK.Location = new System.Drawing.Point(3, 163);
+            this.PANEL_FEASTSANDSAINTS_BACK.Location = new System.Drawing.Point(3, 141);
             this.PANEL_FEASTSANDSAINTS_BACK.Name = "PANEL_FEASTSANDSAINTS_BACK";
-            this.PANEL_FEASTSANDSAINTS_BACK.Size = new System.Drawing.Size(436, 60);
+            this.PANEL_FEASTSANDSAINTS_BACK.Size = new System.Drawing.Size(373, 58);
             this.PANEL_FEASTSANDSAINTS_BACK.TabIndex = 9;
             // 
             // PANEL_FEASTSANDSAINTS_FRONT
@@ -264,7 +264,7 @@ namespace Lectionary.View
             this.PANEL_FEASTSANDSAINTS_FRONT.Dock = System.Windows.Forms.DockStyle.Left;
             this.PANEL_FEASTSANDSAINTS_FRONT.Location = new System.Drawing.Point(0, 0);
             this.PANEL_FEASTSANDSAINTS_FRONT.Name = "PANEL_FEASTSANDSAINTS_FRONT";
-            this.PANEL_FEASTSANDSAINTS_FRONT.Size = new System.Drawing.Size(532, 60);
+            this.PANEL_FEASTSANDSAINTS_FRONT.Size = new System.Drawing.Size(456, 58);
             this.PANEL_FEASTSANDSAINTS_FRONT.TabIndex = 0;
             // 
             // LABEL_FEASTS_AND_SAINTS
@@ -272,24 +272,24 @@ namespace Lectionary.View
             this.LABEL_FEASTS_AND_SAINTS.AutoSize = true;
             this.LABEL_FEASTS_AND_SAINTS.Cursor = System.Windows.Forms.Cursors.SizeNS;
             this.LABEL_FEASTS_AND_SAINTS.Dock = System.Windows.Forms.DockStyle.Top;
-            this.LABEL_FEASTS_AND_SAINTS.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LABEL_FEASTS_AND_SAINTS.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.LABEL_FEASTS_AND_SAINTS.Location = new System.Drawing.Point(0, 0);
             this.LABEL_FEASTS_AND_SAINTS.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.LABEL_FEASTS_AND_SAINTS.MaximumSize = new System.Drawing.Size(430, 0);
+            this.LABEL_FEASTS_AND_SAINTS.MaximumSize = new System.Drawing.Size(369, 0);
             this.LABEL_FEASTS_AND_SAINTS.Name = "LABEL_FEASTS_AND_SAINTS";
-            this.LABEL_FEASTS_AND_SAINTS.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
-            this.LABEL_FEASTS_AND_SAINTS.Size = new System.Drawing.Size(430, 95);
+            this.LABEL_FEASTS_AND_SAINTS.Padding = new System.Windows.Forms.Padding(17, 0, 17, 0);
+            this.LABEL_FEASTS_AND_SAINTS.Size = new System.Drawing.Size(362, 133);
             this.LABEL_FEASTS_AND_SAINTS.TabIndex = 3;
             this.LABEL_FEASTS_AND_SAINTS.Text = resources.GetString("LABEL_FEASTS_AND_SAINTS.Text");
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.BackgroundImage = global::Lectionary.Resources.border_vert;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(442, 551);
+            this.ClientSize = new System.Drawing.Size(379, 478);
             this.ControlBox = false;
             this.Controls.Add(this.TABLELAYOUTPANEL_MAIN);
             this.DoubleBuffered = true;

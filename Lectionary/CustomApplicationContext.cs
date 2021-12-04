@@ -29,7 +29,7 @@ namespace Lectionary
             theIcon.OnSettingsChange += theForm.PaintAll;
             theIcon.OnMoveWindow += theForm.EnableWindowMovement;
 
-            theModel.UpdateModel();
+            theModel.UpdateModel(DateTime.Now);
             theForm.Icon = Resources.AppIcon;
             theForm.ShowIcon = true;
         }

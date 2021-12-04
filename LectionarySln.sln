@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31105.61
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lectionary", "Lectionary\Lectionary.csproj", "{DDC600A8-5DCC-474A-A0B3-D09294351124}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lectionary", "Lectionary\Lectionary.csproj", "{DDC600A8-5DCC-474A-A0B3-D09294351124}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lectionary.UnitTests", "Lectionary.UnitTests\Lectionary.UnitTests.csproj", "{22560460-34F4-4DF5-A2FA-343C0DDC265C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{DDC600A8-5DCC-474A-A0B3-D09294351124}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DDC600A8-5DCC-474A-A0B3-D09294351124}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DDC600A8-5DCC-474A-A0B3-D09294351124}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22560460-34F4-4DF5-A2FA-343C0DDC265C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22560460-34F4-4DF5-A2FA-343C0DDC265C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22560460-34F4-4DF5-A2FA-343C0DDC265C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22560460-34F4-4DF5-A2FA-343C0DDC265C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

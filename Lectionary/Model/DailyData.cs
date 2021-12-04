@@ -15,7 +15,7 @@ namespace Lectionary.Model
         public DailyData(LectionaryDate lectionaryEntry, Bible bible)
         {
             LectionaryEntry = FilteredLectionaryDate(lectionaryEntry, bible);
-            FeastsAndSaints = LectionaryEntry.FeastsAndSaints;
+            FeastsAndSaints = LectionaryEntry.FeastsAndSaints.Trim();
             FillReadingList(bible);
             Day = LectionaryEntry.Day;
         }
@@ -33,7 +33,7 @@ namespace Lectionary.Model
         {
             LectionaryDate filteredLectionaryDate = new LectionaryDate();
             filteredLectionaryDate.Day = lectionaryEntry.Day;
-            filteredLectionaryDate.FeastsAndSaints = lectionaryEntry.FeastsAndSaints;
+            filteredLectionaryDate.FeastsAndSaints = lectionaryEntry.FeastsAndSaints.Trim() ;
             foreach(Reading reading in lectionaryEntry.Readings)
             {
                 if (bible.books.Where(Book => Book.name == reading.Book).Any())

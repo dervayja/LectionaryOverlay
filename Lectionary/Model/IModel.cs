@@ -6,6 +6,6 @@ namespace Lectionary.Model
 {
     interface IModel
     {
-        public event EventHandler OnDataChanged;
+        event EventHandler OnDataChanged;
     }
 }
