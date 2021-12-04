@@ -9,10 +9,11 @@ Readings are taken from the New King James Version (NKJV), the same version used
 ![](Pictures/desktop.PNG)
 
 ## Installation
-1. Download the installation zip file in the Releases section of this repository.
-2. Extract the zipped folder to any location.
-3. Run Setup.exe. Choose "Run Anyway" if promped. The program will install itself to the user's %AppData% location and automatically launch.
-4. The downloaded/ extracted files can be deleted.
+1. Download the zipped installation file. <a href="https://github.com/dervayja/LectionaryOverlay/releases/download/v0.0.2-beta/v0.0.2-beta.zip" download>Click here to download</a>.
+2. If promped to keep or discard the file, choose keep.
+3. Extract the zipped folder to any location.
+4. Run Setup.exe. Choose "Run Anyway" if promped. The program will install itself to the user's %AppData% location and automatically launch.
+5. The downloaded/ extracted files can be deleted.
 
 ## Usage
 The overlay is controlled by right-clicking the icon docked in the system tray.
