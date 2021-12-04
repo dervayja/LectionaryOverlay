@@ -53,7 +53,7 @@ namespace Lectionary.View
             CHECKBOX_RUNONSTARTUP.BackColor = Color.Transparent;
             CHECKBOX_RUNONSTARTUP.CheckedChanged += CHECKBOX_RUNONSTARTUP_CheckedChanged;
             CHECKBOX_RUNONSTARTUP.Checked = Properties.Settings.Default.RunOnStartup;
-            CHECKBOX_RUNONSTARTUP_CheckedChanged(this, EventArgs.Empty);
+            UpdateRegistry(Properties.Settings.Default.RunOnStartup);
             ToolStripControlHost host = new ToolStripControlHost(CHECKBOX_RUNONSTARTUP);
             host.Control.Text = "Run on Startup";
 
@@ -72,11 +72,16 @@ namespace Lectionary.View
             CheckBox chk = (CheckBox)sender;
             Properties.Settings.Default.RunOnStartup = chk.Checked;
             Properties.Settings.Default.Save();
+            UpdateRegistry(Properties.Settings.Default.RunOnStartup);
 
+        }
+
+        private void UpdateRegistry(bool isRunonStartup)
+        {
             string executableFilePath = Application.StartupPath + "\\Lectionary.exe";
             RegistryKey rk = Registry.CurrentUser.OpenSubKey
            ("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
-            if (chk.Checked)
+            if (isRunonStartup)
                 rk.SetValue("Lectionary", executableFilePath);
             else
                 rk.DeleteValue("Lectionary", false);
