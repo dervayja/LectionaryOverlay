@@ -50,9 +50,10 @@ namespace Lectionary.View
             }
 
             CheckBox CHECKBOX_RUNONSTARTUP = new CheckBox();
-            CHECKBOX_RUNONSTARTUP.Checked = Properties.Settings.Default.RunOnStartup;
             CHECKBOX_RUNONSTARTUP.BackColor = Color.Transparent;
             CHECKBOX_RUNONSTARTUP.CheckedChanged += CHECKBOX_RUNONSTARTUP_CheckedChanged;
+            CHECKBOX_RUNONSTARTUP.Checked = Properties.Settings.Default.RunOnStartup;
+            CHECKBOX_RUNONSTARTUP_CheckedChanged(this, EventArgs.Empty);
             ToolStripControlHost host = new ToolStripControlHost(CHECKBOX_RUNONSTARTUP);
             host.Control.Text = "Run on Startup";
 
