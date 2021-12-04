@@ -2,6 +2,8 @@
 An elegant desktop overlay with daily commemorations and lectionary readings for Orthodox Christians.
 The program is completely offline and follows the "new calendar" Orthodox liturgical cycle.
 
+Readings are taken from the New King James Version (NKJV), the same version used in the popular Orthodox Study Bible.
+
 ![](Pictures/mainform.png)
 
 ![](Pictures/desktop.PNG)
